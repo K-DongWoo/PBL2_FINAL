@@ -8,5 +8,21 @@ import java.awt.event.*;
  */
 public class MyListener implements ActionListener
 {
+    private String push;
 
+    public MyListener(String push)
+    {
+        this.push = push;
+    }
+
+    public void actionPerformed(ActionEvent e)
+    {
+        if (push == "게임 시작")
+        {
+            System.out.println("게임을 시작합니다!");
+        } else if (push == "종료")
+        {
+            System.exit(0);
+        }
+    }
 }

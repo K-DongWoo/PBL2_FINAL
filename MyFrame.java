@@ -13,21 +13,10 @@ public class MyFrame extends JFrame
         setTitle("학습용 게임");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(2, 1, 10, 10));
-
-        JButton startButton = new JButton("게임 시작");
-        JButton exitButton = new JButton("종료");
-
-        startButton.addActionListener(new MyListener("게임 시작"));
-        exitButton.addActionListener(new MyListener("종료"));
-
-        panel.add(startButton);
-        panel.add(exitButton);
-
+        MyPanel panel = new MyPanel();
         add(panel);
-
         setVisible(true);
     }
 }

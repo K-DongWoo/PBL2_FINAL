@@ -9,11 +9,11 @@ import java.awt.*;
  */
 public class MyFrame extends JFrame
 {
-    public MyFrame() {
+    public MyFrame()
+    {
         setTitle("학습용 게임");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
 
         MyPanel panel = new MyPanel();
         add(panel);
